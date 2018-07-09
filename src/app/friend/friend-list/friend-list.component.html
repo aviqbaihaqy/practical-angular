@@ -12,7 +12,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let friend of myFriends; let i = index">
+          <tr *ngFor="let friend of myFriends; let i = index" [appHoverHighlight]="{background:'blue', text:'orange'}"> 
             <th scope="row">{{ i + 1 }}</th>
             <td>{{ friend.name }}</td>
             <td>{{ friend.email }}</td>

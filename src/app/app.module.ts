@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FriendComponent } from './friend/friend.component';
 import { FriendAddComponent } from './friend/friend-add/friend-add.component';
 import { FriendListComponent } from './friend/friend-list/friend-list.component';
+import { HoverHighlightDirective } from './hover-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FriendComponent,
     FriendAddComponent,
-    FriendListComponent
+    FriendListComponent,
+    HoverHighlightDirective
   ],
   imports: [
     BrowserModule, FormsModule
