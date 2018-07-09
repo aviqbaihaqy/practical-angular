@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Friend } from "./friend.model";
+import { Friend } from './friend.model';
 
 @Component({
   selector: 'app-friend',
@@ -9,7 +9,7 @@ import { Friend } from "./friend.model";
 export class FriendComponent implements OnInit {
 
   friendList: Friend[] = [
-    new Friend('peter ho', 'pete@gmail.com', '085647890');
+    new Friend('peter ho', 'pete@gmail.com', '085647890')
   ];
 
   constructor() { }
@@ -17,7 +17,7 @@ export class FriendComponent implements OnInit {
   ngOnInit() {
   }
 
-  onFriendAdded (newFriendInfo){
+  onFriendAdded(newFriendInfo) {
     console.log(newFriendInfo);
     this.friendList.push(newFriendInfo);
     console.log(this.friendList);
